@@ -1,16 +1,48 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+<style>
+  /* Styling for the Blockquote */
+  blockquote {
+    max-width: 600px;
+    margin: 10px;
+    padding: 15px;
+    border-left: 8px solid green;
+    background-color: #f8fffe;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #333;
+  }
+  
+  /* Basic styling for the quiz layout */
+  .quiz-container {
+    font-family: sans-serif;
+    padding: 20px;
+  }
+  
+  .options {
+    margin-bottom: 20px;
+  }
+</style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<div class="quiz-container">
+  <h3>Trivia Question</h3>
+  <p>What is the capital of India?</p>
+  
+  <div class="options">
+    <input type="radio" id="new-delhi" name="capital" value="New Delhi">
+    <label for="new-delhi">New Delhi</label><br>
+    
+    <input type="radio" id="mumbai" name="capital" value="Mumbai">
+    <label for="mumbai">Mumbai</label>
+  </div>
+
+  <blockquote cite="https://en.wikipedia.org/wiki/New_Delhi">
+    "New Delhi is the capital of India and an administrative district of NCT Delhi."
+  </blockquote>
+</div>
 
 </body>
-
 </html>
